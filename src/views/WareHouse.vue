@@ -62,7 +62,9 @@
               margin-top: 3vw;
             "
           >
-            创建代码仓库
+            <a href="/test" style="text-decoration: none; color: black"
+              >创建代码仓库</a
+            >
           </div>
         </el-tab-pane>
         <el-tab-pane label="开源仓库" name="third"
@@ -90,6 +92,9 @@ const tabPosition = ref<TabsInstance["tabPosition"]>("left");
 const activeName = ref("first");
 const handleClick = (tab: TabsPaneContext, event: Event) => {
   console.log(tab, event);
+};
+const tz = () => {
+  window.location.href = "/ware";
 };
 </script>
 

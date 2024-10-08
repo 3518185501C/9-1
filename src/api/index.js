@@ -9,3 +9,7 @@ export const getUserName = async () => {
 // export const getUserName = () => {
 //   return axios.get("http://gitee.com/oauth/token");
 // };
+
+// export const goToWare = () => {
+//   this.$router.push("/test");
+// };

@@ -108,7 +108,9 @@ const login = () => {
         />我已阅读并同意<a href="#">服务协议</a>和<a href="#">隐私政策</a>
       </div>
 
-      <div class="dl" type="submit" @click="login">登录</div>
+      <div class="dl" type="submit" @click="login">
+        <a href="/test" style="text-decoration: none; color: white">登录</a>
+      </div>
       <div style="margin-left: 270px">还未注册?<a href="#">立即注册</a></div>
     </form>
   </div>
