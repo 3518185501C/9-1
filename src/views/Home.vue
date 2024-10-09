@@ -10,7 +10,7 @@ const giteedata = ref({
   client_id: "f3fd7280e1bc85e43ffdb1f4bd00002bd1a862346ee0fb2f92987cef47de2d91",
   client_secret:
     "405d2e20c02c7a45f442405bff5b9ed59967cee7ecfa757b8bce41f623c9279d",
-  scope: "projects",
+  scope: "user_info projects pull_requests issues notes keys hook groups gists enterprises",
 });
 const handleClick = () => {
   axios
