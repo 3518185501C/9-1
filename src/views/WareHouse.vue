@@ -8,7 +8,7 @@
       <el-tabs v-model="activeName" class="demo-tabs" @tab-click="handleClick">
         <el-tab-pane label="最近访问" name="first">
           <div style="text-align: center; margin-top: 8vw">
-            <img src="../../public/images/4.png" alt="" />
+            <img src="../../public/images/.png" alt="" />
             <div>暂无数据</div>
           </div>
         </el-tab-pane>
@@ -62,7 +62,7 @@
               margin-top: 3vw;
             "
           >
-            <a href="/test" style="text-decoration: none; color: black"
+            <a href="/test" style="text-decoration: none; color: white"
               >创建代码仓库</a
             >
           </div>
