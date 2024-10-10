@@ -7,10 +7,11 @@ const giteedata = ref({
   grant_type: "password",
   username: "",
   password: "",
-  client_id: "f3fd7280e1bc85e43ffdb1f4bd00002bd1a862346ee0fb2f92987cef47de2d91",
+  client_id: "c631cf22a2ef73f96e2cc02a53d85fb77c28854077b418bc80b32b777a9356c8",
   client_secret:
-    "405d2e20c02c7a45f442405bff5b9ed59967cee7ecfa757b8bce41f623c9279d",
-  scope: "user_info projects pull_requests issues notes keys hook groups gists enterprises",
+    "57fc9dfc774165d231da881aa217f9f11771c49182714bee6d565277c048388f",
+  scope:
+    "user_info projects pull_requests issues notes keys hook groups gists enterprises",
 });
 const handleClick = () => {
   axios
@@ -21,7 +22,7 @@ const handleClick = () => {
       } else {
         console.log("登录出现错误");
       }
-      console.log(res.data.access_token);
+      console.log("res.data.access_token", res.data.access_token);
     })
     .catch((err) => {
       console.log(err);

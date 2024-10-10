@@ -8,7 +8,7 @@
       <el-tabs v-model="activeName" class="demo-tabs" @tab-click="handleClick">
         <el-tab-pane label="最近访问" name="first">
           <div style="text-align: center; margin-top: 8vw">
-            <img src="../../public/images/.png" alt="" />
+            <img src="../../public/images/4.png" alt="" />
             <div>暂无数据</div>
           </div>
         </el-tab-pane>
