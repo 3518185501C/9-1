@@ -5,11 +5,11 @@ import axios from "axios";
 const router = useRouter();
 const giteedata = ref({
   grant_type: "password",
-  username: "",
-  password: "",
-  client_id: "c631cf22a2ef73f96e2cc02a53d85fb77c28854077b418bc80b32b777a9356c8",
+  username: "17740516511@163.com",
+  password: "Cjh20031018",
+  client_id: "f3fd7280e1bc85e43ffdb1f4bd00002bd1a862346ee0fb2f92987cef47de2d91",
   client_secret:
-    "57fc9dfc774165d231da881aa217f9f11771c49182714bee6d565277c048388f",
+    "40675a65db96f4dad60e651970d280ffbb67d67d9270843aa6706df48bcc0cbc",
   scope:
     "user_info projects pull_requests issues notes keys hook groups gists enterprises",
 });
@@ -41,10 +41,15 @@ const getAuthorization = () => {
     });
 };
 </script>
+
 <template>
   <header>
     <section>
-      <img src="../../public/images/1.png" />
+      <a-carousel>
+        <div><img src="../../public/images/1.png" alt="" /></div>
+        <!-- <div><img src="../../public/images/2.png" alt="" /></div>
+        <div><img src="../../public/images/3.png" alt="" /></div> -->
+      </a-carousel>
     </section>
     <div class="biglogin">
       <div class="loginbox">
@@ -73,7 +78,6 @@ const getAuthorization = () => {
         </div>
         <el-checkbox label="我已阅读并同意服务协议和隐私协议" size="large" />
         <el-button type="primary" @click="handleClick">登录</el-button>
-        <el-button type="primary" @click="getAuthorization">授权</el-button>
         <p style="text-align: center">
           <span>还未注册？</span>
           <span style="color: #409eff">立即注册</span>
